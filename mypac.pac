@@ -6048,6 +6048,10 @@ var FindProxyForURL = function(init, profiles) {
         if (scheme === "http" && url.indexOf(".tw01.org") >= 0) return "+proxy";
         if (/^http:\/\/tw01\.org/.test(url)) return "+proxy";
         if (scheme === "http" && url.indexOf(".tumblr.com") >= 0) return "+proxy";
+        if (scheme === "https" && url.indexOf(".yahoo.com") >= 0) return "+proxy";
+        if (scheme === "https" && url.indexOf(".yahoo.net") >= 0) return "+proxy";
+        if (scheme === "http" && url.indexOf(".yahoo.com") >= 0) return "+proxy";
+        if (scheme === "http" && url.indexOf(".yahoo.net") >= 0) return "+proxy";
         if (/(?:^|\.)tumblr\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)lecloud\.net$/.test(host)) return "+proxy";
         if (/^http:\/\/cosmic\.monar\.ch/.test(url)) return "+proxy";
