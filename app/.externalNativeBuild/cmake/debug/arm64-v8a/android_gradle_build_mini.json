@@ -1,0 +1,21 @@
+{
+  "buildFiles": [
+    "/Users/yizhu/GmSSLDemo/app/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/yizhu/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/yizhu/GmSSLDemo/app/.externalNativeBuild/cmake/debug/arm64-v8a --target clean"
+  ],
+  "libraries": {
+    "crypto-Debug-arm64-v8a": {
+      "artifactName": "crypto",
+      "abi": "arm64-v8a",
+      "output": "/Users/yizhu/GmSSLDemo/app/libs/arm64-v8a/libcrypto.a"
+    },
+    "native-lib-Debug-arm64-v8a": {
+      "artifactName": "native-lib",
+      "buildCommand": "/Users/yizhu/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/yizhu/GmSSLDemo/app/.externalNativeBuild/cmake/debug/arm64-v8a --target native-lib",
+      "abi": "arm64-v8a",
+      "output": "/Users/yizhu/GmSSLDemo/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so"
+    }
+  }
+}

@@ -152,7 +152,8 @@ Java_com_ftsafe_chuangxin_myapplication_MainActivity_genSM2KeyPairs(JNIEnv *env,
                                                                     jobject instance,
                                                                     jstring path_) {
 
-    const char *p = env->GetStringUTFChars(path_, false);
+    jboolean result = false;
+    const char *p = env->GetStringUTFChars(path_, &result);
     int pLen = env->GetStringUTFLength(path_);
 
     path = (char *) malloc(pLen + 1);
